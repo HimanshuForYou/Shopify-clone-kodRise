@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="logo"> <img src="images/logo/logo.png"> </div>
+
+            <div class="search-bar"> 
+                    <select name="All" value="All" >
+                        <option>All</option>
+                        <option value="bike-computer">Bike computer</option>
+                        <option value="watch">Watch</option>
+                        <option value="dac-converter">DAC Converter</option>
+                        <option value="magic">Magic</option>
+                    </select>
+                    <input type="search" placeholder="Search here..." class="search-tag"/>
+                    <button type="button" class="mic-btn" aria-label="Voice search">
+                        <i class="fa-solid fa-microphone"></i>
+                    </button>
+            </div>
+            <div class="header-icon">
+                <a><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" role="presentation" class="icon"><path d="M12 2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.429a3.571 3.571 0 1 0 0 7.142 3.571 3.571 0 0 0 0-7.142zm0 10c2.558 0 5.114.471 7.664 1.411A3.571 3.571 0 0 1 22 18.19v3.096c0 .394-.32.714-.714.714H2.714A.714.714 0 0 1 2 21.286V18.19c0-1.495.933-2.833 2.336-3.35 2.55-.94 5.106-1.411 7.664-1.411zm0 1.428c-2.387 0-4.775.44-7.17 1.324a2.143 2.143 0 0 0-1.401 2.01v2.38H20.57v-2.38c0-.898-.56-1.7-1.401-2.01-2.395-.885-4.783-1.324-7.17-1.324z"></path></svg></a> 
+                <a><svg width="21" height="19" viewBox="0 0 21 19" fill="currentColor" aria-hidden="true" focusable="false" role="presentation" class="icon"><path d="M10 6.25V.5h1.5v5.75H21l-3.818 12H3.818L0 6.25h10Zm-7.949 1.5 2.864 9h11.17l2.864-9H2.05h.001Z"></path></svg></a>
+            </div>     
+        </div>
+        <!-- bottom-header -->
+        <div class="header-bottom">
+            <nav class="nav-links">
+            <ul class="header-list">
+                <li><a href="#">Shop ▾</a></li>
+                <li><a href="#">Digital Cameras ▾</a></li>
+                <li><a href="#">Computing</a></li>
+                <li><a href="#">Presets ▾</a></li>
+                <li><a href="#">Theme Features</a></li>
+            </ul>
+            </nav>
+            <div class="header-right">
+                <a>Advice & Reviews</a>
+                <a>Gift Cards</a>
+                <button class="expert-btn"><i class="fa-solid fa-phone"></i> Expert Help</button>
+            </div>
+            
+        </div>
+    </header>
+    <div>
+        <!-- support services -->
+        <div class="support-wrapper">
+            <button class="slide-arrow left-arrow" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            
+            <div class="support-service">
+                <div><svg class="icon icon--truck" width="24" height="24" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation"><path fill="currentColor" d="M15.64 6.92L9.5 5.12V4a.5.5 0 00-.5-.5H1a.5.5 0 00-.5.5v8.5c0 .28.22.5.5.5h1.27a2.1 2.1 0 004.06 0h3.94a2.1 2.1 0 004.06 0h1.17a.5.5 0 00.5-.5V7.4a.5.5 0 00-.36-.48zM4.3 13.6a1.1 1.1 0 110-2.2 1.1 1.1 0 010 2.2zM6.33 12a2.1 2.1 0 00-4.06 0H1.5V4.5h7V12H6.33zm5.97 1.6a1.1 1.1 0 110-2.2 1.1 1.1 0 010 2.2zM15 12h-.67a2.1 2.1 0 00-4.06 0H9.5V6.17l5.5 1.6V12z"></path></svg>
+                    Free shipping over $100</div>
+                <div><svg class="icon icon--chat_bubble" width="24" height="24" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation"><path fill="currentColor" d="M11.3 13.02a6 6 0 111.72-1.72L14 14l-2.7-.98zm2.82-1.62a7 7 0 10-2.72 2.72l2.26.82a1 1 0 001.28-1.28l-.82-2.26z"></path>
+        <path fill="currentColor" d="M4.9 9.16c.52 0 .86-.36.86-.85 0-.5-.34-.85-.87-.85-.52 0-.86.36-.86.85 0 .5.34.85.86.85zM7.88 9.16c.53 0 .87-.36.87-.85 0-.5-.34-.85-.87-.85-.52 0-.87.36-.87.85 0 .5.35.85.87.85zM10.87 9.16c.52 0 .87-.36.87-.85 0-.5-.35-.85-.87-.85s-.87.36-.87.85c0 .5.35.85.87.85z"></path></svg>
+                    Free help & advice</div>
+                <div><svg class="icon icon--return" width="24" height="24" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation"><path fill="currentColor" d="M9 .5a.5.5 0 000 1h1a4.5 4.5 0 110 9H2.2l3.15-3.15a.5.5 0 10-.7-.7l-4 4a.5.5 0 000 .7l4 4a.5.5 0 00.7-.7L2.21 11.5H10a5.5 5.5 0 100-11H9z"></path></svg> 
+                    Hassle-free returns</div>
+                <div><svg class="icon icon--map_pin" width="24" height="24" viewBox="0 0 16 16" aria-hidden="true" focusable="false" role="presentation"><path fill="currentColor" d="M6.72 14.63L7.5 14l.78.63-.78.96-.78-.96zm1.41-1.44L7.5 14s-.25-.3-.63-.81C5.63 11.54 3 7.8 3 5.79 3 3.14 5.01 1 7.5 1S12 3.14 12 5.79c0 2.02-2.63 5.75-3.87 7.4zm.15 1.44L7.5 14l-.78.63-.01-.02-.04-.05a26.53 26.53 0 01-.67-.87c-.43-.58-1.01-1.37-1.59-2.26A24.32 24.32 0 012.8 8.62 7.07 7.07 0 012 5.79C2 2.65 4.4 0 7.5 0S13 2.65 13 5.79c0 .9-.36 1.9-.8 2.83-.45.95-1.04 1.93-1.61 2.81a43.67 43.67 0 01-2.26 3.13l-.04.05v.01h-.01z" fill-rule="evenodd"></path>
+        <path fill="currentColor" d="M7.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm0 1a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" fill-rule="evenodd"></path></svg> 
+                    Open 7 days a week</div>
+            </div>
+            <button class="slide-arrow right-arrow" aria-label="Next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- coupan -->
+        <div class="coupan-div">
+            <div class="coupan-first">Flash Sale now on!</div>
+            <div>Huge savings across all ranges sitewide</div>
+            <div class="coupan-btn">
+                <div class="cpn-code">FLASHSALE23</div>
+                <div class="copy-btn"><i class="far fa-copy"></i> Copy code</div>
+            </div>
+        </div>
+
+        <!-- hero section -->
+        <!-- hero section -->
+        <div class="home-div">
+            <div class="hero-slider">
+                <img src="images/hero-section/image1.png" class="hero-bg" alt="Slide 1">
+                <img src="images/hero-section/image2.png" class="hero-bg" alt="Slide 2">
+                <img src="images/hero-section/image3.png" class="hero-bg" alt="Slide 3">
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-text-wrapper">
+                    <div class="home-sub-div active">
+                        <p class="hero-tag">1,000's of products</p>
+                        <h2>Top specs.<br>Low prices.</h2>
+                        <button class="shop-btn">Shop Laptops</button>
+                    </div>
+
+                    <div class="home-sub-div">
+                        <p class="hero-tag">The biggest brands</p>
+                        <h2>Smart tech.<br>Smart prices.</h2>
+                        <button class="shop-btn">Shop Smart Tech</button>
+                    </div>
+
+                    <div class="home-sub-div">
+                        <p class="hero-tag">Price match guarantee</p>
+                        <h2>Amazing deals<br>on electricals.</h2>
+                        <button class="shop-btn">Shop Home Tech</button>
+                    </div>
+                </div>
+
+                <div class="hero-form">
+                    <form>
+                        <h3>Shop our range</h3>
+
+                        <select>
+                            <option value="">Choose a department...</option>
+                            <option value="laptops">Laptops</option>
+                            <option value="cameras">Digital Cameras</option>
+                            <option value="audio">Audio</option>
+                        </select>
+
+                        <select disabled>
+                            <option value="">Choose a category...</option>
+                        </select>
+
+                        <select disabled>
+                            <option value="">Choose a product type...</option>
+                        </select>
+
+                        <button type="submit" class="form-search-btn" disabled>Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hero-indicators">
+                <button type="button" class="hero-dot active" aria-label="Slide 1"><span></span></button>
+                <button type="button" class="hero-dot" aria-label="Slide 2"><span></span></button>
+                <button type="button" class="hero-dot" aria-label="Slide 3"><span></span></button>
+            </div>
+
+        </div>
+
+        <!-- shop deals -->
+        <section class="shop-deals">
+            <h2 class="deal-heading">Shop Deals</h2>
+
+            <div class="deals-grid">
+                <div class="deal">
+                    <div class="shop-img">
+                        <img src="images/shop-deals/image1.png" alt="Loudspeakers">
+                    </div>
+                    <div class="deal-title">Loudspeakers</div>
+                    <a href="#" class="deal-link">View collection <i class="fa-regular fa-circle-right"></i></a>
+                </div>
+
+                <div class="deal">
+                    <div class="shop-img">
+                        <span class="deal-badge">Up to 25% Off</span>
+                        <img src="images/shop-deals/image2.png" alt="Computing">
+                    </div>
+                    <div class="deal-title">Computing</div>
+                    <a href="#" class="deal-link">View collection <i class="fa-regular fa-circle-right"></i></a>
+                </div>
+
+                <div class="deal">
+                    <div class="shop-img">
+                        <img src="images/shop-deals/image3.png" alt="Smart Tech">
+                    </div>
+                    <div class="deal-title">Smart Tech</div>
+                    <a href="#" class="deal-link">View collection <i class="fa-regular fa-circle-right"></i></a>
+                </div>
+
+                <div class="deal">
+                    <div class="shop-img">
+                        <img src="images/shop-deals/image4.png" alt="Desktops">
+                    </div>
+                    <div class="deal-title">Desktops</div>
+                    <a href="#" class="deal-link">View collection <i class="fa-regular fa-circle-right"></i></a>
+                </div>
+
+                <div class="deal">
+                    <div class="shop-img">
+                        <span class="deal-badge">Huge Savings</span>
+                        <img src="images/shop-deals/image5.png" alt="Smart watches">
+                    </div>
+                    <div class="deal-title">Smart watches</div>
+                    <a href="#" class="deal-link">View collection <i class="fa-regular fa-circle-right"></i></a>
+                </div>
+
+                <div class="deal">
+                    <div class="shop-img">
+                        <img src="images/shop-deals/image6.png" alt="Digital Cameras">
+                    </div>
+                    <div class="deal-title">Digital Cameras</div>
+                    <a href="#" class="deal-link">View collection <i class="fa-regular fa-circle-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Images section -->
+        <section class="img-section">
+            <div class="img-card img-box1">
+                <div class="card-img-wrap">
+                    <span class="promo-badge single-line">New in</span>
+                    <img src="images/img-section/image1.png" alt="Smart watches">
+                </div>
+                <div class="card-title">Smart prices on smart watches</div>
+                <a href="#" class="card-link">Shop the latest arrivals now &gt;</a>
+            </div>
+
+            <div class="img-card img-box2">
+                <div class="card-img-wrap">
+                    <span class="promo-badge">Save up to<br><strong>25%</strong></span>
+                    <img src="images/img-section/image2.png" alt="Computing">
+                </div>
+                <div class="card-title">Replace the essentials</div>
+                <a href="#" class="card-link">Shop Computing &gt;</a>
+            </div>
+
+            <div class="img-card img-box3">
+                <div class="card-img-wrap">
+                    <span class="promo-badge">Save up to<br><strong>1/3</strong></span>
+                    <img src="images/img-section/image3.png" alt="Loudspeakers">
+                </div>
+                <div class="card-title">Treat yourself...</div>
+                <a href="#" class="card-link">Shop loudspeakers &gt;</a>
+            </div>
+
+            <div class="img-card img-box4">
+                <div class="card-img-wrap">
+                    <span class="promo-badge">Save up to<br><strong>33%</strong></span>
+                    <img src="images/img-section/image4.png" alt="Digital Cameras">
+                </div>
+                <div class="card-title">Make it snappy!</div>
+                <a href="#" class="card-link">Top deals on cameras &gt;</a>
+            </div>
+        </section>
+        
+        <!-- counter section -->
+
+        <div class="counter-section">
+            <div class="counter-img"> <img src="images/counter-img/image.png" alt=""> </div>
+            <div class="counter">
+                <div class="counter-core">
+                    <h1>Flash Sale</h1>
+                    <h3>Hurry! Offers end soon.</h3>
+                    <div class="countdown-grid">
+                        <div class="countdown-unit">
+                            <div class="countdown-item">0</div>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <div class="countdown-item">15</div>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <div class="countdown-item">27</div>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-unit">
+                            <div class="countdown-item">45</div>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
+                    <button>Shop Flash Sale</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trending now -->
+         <!-- Trending now -->
+        <section class="trending-section">
+            <h2 class="trending-heading">Trending now...</h2>
+
+            <div class="trending-carousel-wrap">
+                <button class="trend-arrow trend-prev" aria-label="Previous products">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="trending-grid">
+                    <!-- Card 1 -->
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <div class="product-badges">
+                                <span class="badge-tag tag-orange">New</span>
+                                <span class="badge-tag tag-purple"><i class="fa-solid fa-tag"></i> Up to 33% off</span>
+                            </div>
+                            <img src="images/trending/camera.png" alt="Nikon 1 S2 Point & Shoot Camera">
+                        </div>
+
+                        <div class="product-brand">Nikon</div>
+                        <div class="product-name">Nikon 1 S2 Point &amp; Shoot Camera</div>
+                        <div class="product-rating">★★★★★ <span>(2)</span></div>
+                        <div class="product-price">$240.00 <span class="old-price">$360.00</span></div>
+
+                        <div class="color-swatches">
+                            <span class="swatch active" style="background-color: #f3e03b;"></span>
+                            <span class="swatch" style="background-color: #22252a;"></span>
+                            <span class="swatch" style="background-color: #c84b59;"></span>
+                            <span class="swatch" style="background-color: #f4f4f4;"></span>
+                        </div>
+
+                        <div class="stock-status in-stock"><span class="dot"></span> In stock (384 units)</div>
+                        <button class="cart-btn">Choose options</button>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <div class="product-badges">
+                                <span class="badge-tag tag-orange">Style Icon</span>
+                            </div>
+                            <img src="images/trending/watch.png" alt="Polar Unite Smart Watch">
+                        </div>
+
+                        <div class="product-brand">Polar</div>
+                        <div class="product-name">Polar Unite Smart Watch</div>
+                        <div class="product-rating">★★★★<span class="star-empty">★</span> <span>(2)</span></div>
+                        <div class="product-price">From $129.50</div>
+
+                        <div class="color-swatches">
+                            <span class="swatch active" style="background-color: #df69a4;"></span>
+                            <span class="swatch" style="background-color: #22252a;"></span>
+                        </div>
+
+                        <div class="stock-status in-stock"><span class="dot"></span> In stock (192 units)</div>
+                        <button class="cart-btn">Choose options</button>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <div class="product-badges">
+                                <span class="badge-tag tag-purple"><i class="fa-solid fa-tag"></i> 12% off</span>
+                                <span class="badge-tag tag-green">New arrival</span>
+                            </div>
+                            <img src="images/trending/thermostat.png" alt="ecobee Smart Thermostat Premium">
+                        </div>
+
+                        <div class="product-brand">Ecobee</div>
+                        <div class="product-name">ecobee Smart Thermostat Premium</div>
+                        <div class="product-rating">★★★★<span class="star-empty">★</span> <span>(1)</span></div>
+                        <div class="product-price">$220.00 <span class="old-price">$249.99</span></div>
+
+                        <div class="stock-status in-stock"><span class="dot"></span> In stock (95 units)</div>
+                        <button class="cart-btn">Add to cart</button>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <div class="product-badges">
+                                <span class="badge-tag tag-orange">Entry-level</span>
+                            </div>
+                            <img src="images/trending/speakers.png" alt="Meridian DSP3300 Digital Active Loudspeakers">
+                        </div>
+
+                        <div class="product-brand">Meridian</div>
+                        <div class="product-name">Meridian DSP3300 Digital Active Loudspeakers</div>
+                        <div class="product-rating">★★★★★ <span>(1)</span></div>
+                        <div class="product-price">$2,000.00</div>
+
+                        <div class="stock-status in-stock"><span class="dot"></span> In stock (96 units)</div>
+                        <button class="cart-btn">Add to cart</button>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <div class="product-badges">
+                                <span class="badge-tag tag-orange">Gaming</span>
+                            </div>
+                            <img src="images/trending/laptop.png" alt="Nitro AMD Ryzen 7 17 Gaming Laptop">
+                        </div>
+
+                        <div class="product-brand">Acer</div>
+                        <div class="product-name">Nitro AMD Ryzen™ 7 17" Gaming Laptop</div>
+                        <div class="product-rating">★★★★<span class="star-empty">★</span> <span>(2)</span></div>
+                        <div class="product-price">$1,699.99</div>
+
+                        <div class="stock-status low-stock"><span class="dot"></span> Very low stock (7 units)</div>
+                        <button class="cart-btn">Add to cart</button>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <div class="product-badges">
+                                <span class="badge-tag tag-purple"><i class="fa-solid fa-tag"></i> Up to 22% off</span>
+                            </div>
+                            <img src="images/trending/fitness-tracker.png" alt="Polar A370 Fitness Tracker">
+                        </div>
+
+                        <div class="product-brand">Polar</div>
+                        <div class="product-name">Polar A370 Fitness Tracker</div>
+                        <div class="product-rating">★★★★★ <span>(1)</span></div>
+                        <div class="product-price">$120.00 <span class="old-price">$154.50</span></div>
+
+                        <div class="color-swatches">
+                            <span class="swatch active" style="background-color: #c84b7a;"></span>
+                            <span class="swatch" style="background-color: #22252a;"></span>
+                            <span class="swatch" style="background-color: #3b82f6;"></span>
+                            <span class="swatch" style="background-color: #f97316;"></span>
+                            <span class="swatch-more">+2</span>
+                        </div>
+
+                        <div class="stock-status in-stock"><span class="dot"></span> In stock (96 units)</div>
+                        <button class="cart-btn">Choose options</button>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <div class="product-badges">
+                                <span class="badge-tag tag-orange">Best Value</span>
+                            </div>
+                            <img src="images/trending/ecobee-lite.png" alt="ecobee3 Lite Thermostat">
+                        </div>
+
+                        <div class="product-brand">Ecobee</div>
+                        <div class="product-name">ecobee3 Lite Thermostat</div>
+                        <div class="product-rating">★★★★<span class="star-empty">★</span> <span>(1)</span></div>
+                        <div class="product-price">$149.99</div>
+
+                        <div class="stock-status low-stock"><span class="dot"></span> Very low stock (8 units)</div>
+                        <button class="cart-btn">Add to cart</button>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="product-card">
+                        <div class="product-img-box">
+                            <div class="product-badges">
+                                <span class="badge-tag tag-purple"><i class="fa-solid fa-tag"></i> Up to 26% off</span>
+                            </div>
+                            <img src="images/trending/dslr.png" alt="Nikon D3400 DSLR Camera">
+                        </div>
+
+                        <div class="product-brand">Nikon</div>
+                        <div class="product-name">Nikon D3400 DSLR Camera</div>
+                        <div class="product-rating">★★★★<span class="star-empty">★</span> <span>(2)</span></div>
+                        <div class="product-price">$320.00 <span class="old-price">$433.00</span></div>
+
+                        <div class="color-swatches">
+                            <span class="swatch active" style="background-color: #9e2a38;"></span>
+                            <span class="swatch" style="background-color: #22252a;"></span>
+                        </div>
+
+                        <div class="stock-status med-stock"><span class="dot"></span> Low stock (18 units)</div>
+                        <button class="cart-btn">Choose options</button>
+                    </div>
+                </div>
+
+                <button class="trend-arrow trend-next" aria-label="Next products">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="trending-scrollbar">
+                <div class="scrollbar-thumb"></div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
