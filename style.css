@@ -241,7 +241,7 @@ a{
     padding: 1rem;
     color: #ffffff;
     gap: 20px;
-    font-family:  sans-serif;
+    font-family: "DM Sans", sans-serif;
     height: 1.5rem;
 }
 .coupan-first{
@@ -703,7 +703,7 @@ a{
   width: 475px;
   height: 375px;
   background: linear-gradient(225deg, rgba(51, 59, 67, 0.88) 8%, rgba(41, 47, 54, 1) 56%, rgba(20, 20, 20, 1) 92%);
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .counter-core {
@@ -796,6 +796,22 @@ a{
 
 
 /* trending now section */
+/* trending now section */
+.trending-section {
+    max-width: 1250px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.trending-heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #22252a;
+    margin: 0 0 36px 0;
+}
 
 .trending-carousel-wrap {
     position: relative;
@@ -821,10 +837,190 @@ a{
     text-align: left;
 }
 
-/* Circular white floating arrow buttons */
+/* Image Container & Badges */
+.product-img-box {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.product-img-box img {
+    max-width: 85%;
+    max-height: 165px;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+.product-card:hover .product-img-box img {
+    transform: scale(1.04);
+}
+
+.product-badges {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.badge-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 8px;
+    font-size: 13px;
+    /* font-weight: 700; */
+    color: #ffffff;
+    border-radius: 2px;
+    line-height: 1;
+}
+
+.tag-orange { background-color: rgba(255 88 13 / 1.0); }
+.tag-purple { background-color: #AA1155; }
+.tag-green  { background-color: #7FB800; }
+
+/* Product Details */
+.product-brand {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #22252a;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    min-height: 38px;
+}
+
+.product-rating {
+    font-size: 13px;
+    color: #f59e0b;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.product-rating .star-empty {
+    color: #e5e7eb;
+}
+
+.product-rating span:last-child {
+    color: #4b5563;
+    font-size: 12px;
+    letter-spacing: 0;
+    margin-left: 2px;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #22252a;
+    margin-bottom: 14px;
+}
+
+.old-price {
+    font-size: 13px;
+    font-weight: 400;
+    color: #6b7280;
+    text-decoration: line-through;
+    margin-left: 6px;
+}
+
+/* Color Swatches */
+.color-swatches {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.swatch {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #e5e7eb;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: transform 0.15s ease;
+}
+
+.swatch:hover {
+    transform: scale(1.1);
+}
+
+.swatch.active {
+    outline: 1.5px solid #22252a;
+    outline-offset: 2px;
+}
+
+.swatch-more {
+    font-size: 12px;
+    color: #6b7280;
+    margin-left: 2px;
+}
+
+/* Stock Status */
+.stock-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.stock-status .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.in-stock { color: #3f6212; }
+.in-stock .dot { background-color: #65a30d; }
+
+.low-stock { color: #991b1b; }
+.low-stock .dot { background-color: #dc2626; }
+
+.med-stock { color: #92400e; }
+.med-stock .dot { background-color: #eab308; }
+
+/* Action Button (Pinned to bottom so all buttons align horizontally) */
+.cart-btn {
+    margin-top: auto;
+    width: 100%;
+    height: 42px;
+    background-color: #ff580d;
+    color: #ffffff;
+    border: none;
+    border-radius: 999px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.cart-btn:hover {
+    background-color: #e04804;
+}
+
+/* Circular White Floating Arrow Buttons */
 .trend-arrow {
     position: absolute;
-    top: 90px;
+    top: 85px;
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -855,15 +1051,6 @@ a{
     right: -14px;
 }
 
-.swatch-more {
-    font-size: 12px;
-    color: #6b7280;
-    margin-left: 2px;
-}
-
-.med-stock { color: #92400e; }
-.med-stock .dot { background-color: #eab308; }
-
 .trending-scrollbar {
     position: relative;
     width: 100%;
@@ -881,3 +1068,76 @@ a{
     transition: left 0.2s ease;
 }
 
+/* banner section coming soon */
+/* Coming soon banner section */
+.coming-soon-section {
+    width: 100%;
+    height: 560px;
+    margin: 60px 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #1b1e22 0%, #2a3139 50%, #2e363f 100%);
+    font-family: "DM Sans", sans-serif;
+}
+
+.coming-soon-section img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.coming-soon-card {
+    position: relative;
+    z-index: 2;
+    width: 500px;
+    height: 300px;
+    max-width: 90%;
+    padding: 52px 36px;
+    box-sizing: border-box;
+    text-align: center;
+    background: linear-gradient(225deg, rgba(51, 59, 67, 0.88) 8%, rgba(41, 47, 54, 0.96) 56%, rgba(20, 20, 20, 0.98) 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-soon-card h2 {
+    margin: 0 0 14px 0;
+    color: #ff580d;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.coming-soon-card p {
+    margin: 0 0 28px 0;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.coming-soon-btn {
+    background-color: #ff580d;
+    color: #ffffff;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 26px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.coming-soon-btn:hover {
+    background-color: #e04804;
+    transform: translateY(-1px);
+}
